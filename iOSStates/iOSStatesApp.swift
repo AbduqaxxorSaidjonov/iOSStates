@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct iOSStatesApp: App {
     let persistenceController = PersistenceController.shared
-
+    let settings = UserSettings()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainScreen()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(settings)
         }
     }
 }

@@ -8,21 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		76D2261627F831E3009E4575 /* iOSStatesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2261527F831E3009E4575 /* iOSStatesApp.swift */; };
-		76D2261827F831E3009E4575 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2261727F831E3009E4575 /* ContentView.swift */; };
 		76D2261A27F831E3009E4575 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D2261927F831E3009E4575 /* Assets.xcassets */; };
 		76D2261D27F831E3009E4575 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76D2261C27F831E3009E4575 /* Preview Assets.xcassets */; };
 		76D2261F27F831E3009E4575 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2261E27F831E3009E4575 /* Persistence.swift */; };
 		76D2262227F831E3009E4575 /* iOSStates.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 76D2262027F831E3009E4575 /* iOSStates.xcdatamodeld */; };
+		76D2262927F8321C009E4575 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2262827F8321C009E4575 /* MainScreen.swift */; };
+		76D2262D27F8346F009E4575 /* SecondScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2262C27F8346F009E4575 /* SecondScreen.swift */; };
+		76D2263027F83562009E4575 /* UserSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D2262F27F83562009E4575 /* UserSetting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		76D2261227F831E3009E4575 /* iOSStates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStates.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		76D2261527F831E3009E4575 /* iOSStatesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSStatesApp.swift; sourceTree = "<group>"; };
-		76D2261727F831E3009E4575 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		76D2261927F831E3009E4575 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76D2261C27F831E3009E4575 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		76D2261E27F831E3009E4575 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		76D2262127F831E3009E4575 /* iOSStates.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSStates.xcdatamodel; sourceTree = "<group>"; };
+		76D2262827F8321C009E4575 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		76D2262C27F8346F009E4575 /* SecondScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondScreen.swift; sourceTree = "<group>"; };
+		76D2262F27F83562009E4575 /* UserSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSetting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,10 @@
 		76D2261427F831E3009E4575 /* iOSStates */ = {
 			isa = PBXGroup;
 			children = (
+				76D2262E27F83523009E4575 /* methods */,
+				76D2262B27F83242009E4575 /* screens */,
 				76D2261527F831E3009E4575 /* iOSStatesApp.swift */,
-				76D2261727F831E3009E4575 /* ContentView.swift */,
-				76D2261927F831E3009E4575 /* Assets.xcassets */,
-				76D2261E27F831E3009E4575 /* Persistence.swift */,
-				76D2262027F831E3009E4575 /* iOSStates.xcdatamodeld */,
+				76D2262A27F83220009E4575 /* apputils */,
 				76D2261B27F831E3009E4575 /* Preview Content */,
 			);
 			path = iOSStates;
@@ -71,6 +74,33 @@
 				76D2261C27F831E3009E4575 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		76D2262A27F83220009E4575 /* apputils */ = {
+			isa = PBXGroup;
+			children = (
+				76D2262027F831E3009E4575 /* iOSStates.xcdatamodeld */,
+				76D2261E27F831E3009E4575 /* Persistence.swift */,
+				76D2261927F831E3009E4575 /* Assets.xcassets */,
+			);
+			path = apputils;
+			sourceTree = "<group>";
+		};
+		76D2262B27F83242009E4575 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				76D2262827F8321C009E4575 /* MainScreen.swift */,
+				76D2262C27F8346F009E4575 /* SecondScreen.swift */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		76D2262E27F83523009E4575 /* methods */ = {
+			isa = PBXGroup;
+			children = (
+				76D2262F27F83562009E4575 /* UserSetting.swift */,
+			);
+			path = methods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76D2262927F8321C009E4575 /* MainScreen.swift in Sources */,
 				76D2261F27F831E3009E4575 /* Persistence.swift in Sources */,
 				76D2262227F831E3009E4575 /* iOSStates.xcdatamodeld in Sources */,
-				76D2261827F831E3009E4575 /* ContentView.swift in Sources */,
+				76D2263027F83562009E4575 /* UserSetting.swift in Sources */,
 				76D2261627F831E3009E4575 /* iOSStatesApp.swift in Sources */,
+				76D2262D27F8346F009E4575 /* SecondScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
